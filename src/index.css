@@ -1,5 +1,5 @@
 body {
-  background: url("crypt.png") no-repeat cover fixed;
+  background: url("crypt.png") no-repeat cover fixed center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
