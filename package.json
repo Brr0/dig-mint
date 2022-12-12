@@ -22,6 +22,7 @@
     "@solana/wallet-adapter-solflare": "^0.6.18",
     "@solana/wallet-adapter-sollet": "^0.11.12",
     "@solana/web3.js": "^1.58.0",
+    "caniuse-lite": "^1.0.30001439",
     "mime": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -34,11 +35,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "craco --openssl-legacy-provider start",
     "lint": "prettier -c 'src/**/*.{ts,tsx}' && npm run lint:eslint",
     "lint:eslint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "prettier --write 'src/**/*.{ts,tsx}' && eslint --fix 'src/**/*.{ts,tsx}'",
-    "build": "craco build",
+    "build": "craco --openssl-legacy-provider build",
     "test": "craco test",
     "eject": "craco eject"
   },
