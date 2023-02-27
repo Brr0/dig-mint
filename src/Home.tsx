@@ -25,7 +25,7 @@ import {
   mintOneToken,
   SetupState,
 } from "./candy-machine";
-import { AlertState, formatNumber, getAtaForMint, toDate } from "./utils";
+import { AlertState, getAtaForMint, toDate } from "./utils";
 import { MintCountdown } from "./MintCountdown";
 import { MintButton } from "./MintButton";
 import { GatewayProvider } from "@civic/solana-gateway-react";
@@ -524,10 +524,8 @@ const Home = (props: HomeProps) => {
                       style={{ fontWeight: "bold" }}
                     >
                       {isWhitelistUser && discountPrice
-                        ? `$USDC ${formatNumber.asNumber(discountPrice)}`
-                        : `$USDC ${formatNumber.asNumber(
-                            candyMachine.state.price
-                          )}`}
+                        ? `70 $USDC`
+                        : `70 $USDC`}
                     </Typography>
                   </Grid>
                   <Grid item xs={5}>
